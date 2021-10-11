@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body  {
+    background: #e5e4eb;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.Contenedor {
+    width: 90%;
+    max-width: 800px;
+    height: auto;
+}
+
+/* Header */
+
+header {
+    padding: 40px 0;
+}
+
+header .Logo {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header .Logo p {
+    color: #9b9b9b
+}
+
+header form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+header .barra-busqueda{
+    width: 70%;
+    height: 40px;
+    line-height: 40px;
+    background: #fff;
+    padding: 0 20px;
+    border-radius: 100px;
+    border:  none;
+    text-align: center;
+    font-size: 16px;
+}
+
+header .Categorias {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+header .Categorias a{
+    color: #9b9b9b;
+    margin: 10px 20px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+header .Categorias a.activo {
+    color: black;
+}
