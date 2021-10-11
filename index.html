@@ -6,31 +6,190 @@
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
     <meta http_equip="X_UA_Compatible" content="ie_edge">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="estilos.css">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="assets/css/templatemo-style.css" />
+    <link rel="stylesheet" href="assets/css/owl.css" />
+    <link rel="stylesheet" href="assets/css/lightbox.css" />
     <title>Portafolio - Geovanni Nufio</title>
 </head>
 
 <body>
+    <div id="page-wraper">
+        <div class="responsive-nav">
+            <i class="fa fa-bars" id="menu-toggle"></i>
+            <div id="menu" class="menu">
+                <i class="fa fa-times" id="menu-close"></i>
+                <div class="container">
+                    <div class="image">
+                        <a href="#"><img src="assets/images/author-image.jpeg" alt="" /></a>
+                    </div>
+                    <div class="author-content">
+                        <h4>Geovanni Nufio</h4>
+                    </div>
+                    <nav class="main-nav" role="navigation">
+                        <ul class="main-menu">
+                            <li><a href="#section1">Acerca de mi</a></li>
+                            <li><a href="#section2">Conocimientos</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
 
-    <div class="Contenedor">
-        <header>
-            <div class="Logo">
-                <h1>Geovanni Nufio</h1>
-                <p>Portafolio</p>
+        <section class="section about-me" data-section="section1">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>Acerca de mi</h2>
+                    <div class="line-dec"></div>
+                <div class="left-image-post">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="left-image">
+                                <img src="assets/images/kinal.png" alt="" />
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="right-text">
+                                <h4>Secundaria</h4>
+                                <p>
+                                    Cuando me gradue de la secundaria, estudiaba en la fundacion kinal, en donde segui perito en informatica. Consegui muchos conocimientos basicos gracias a ello.
+                                </p>
+                                <div class="white-button">
+                                    <a href="#">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-image-post">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="left-text">
+                                <h4>Universidad</h4>
+                                <p>
+                                    Actualmente estudio en la Universidad San Carlos de Guatemala, sigo ingenieria en sistemas, poco a poco eh ido aprendiendo sobre ciertos conceptos y metodos que me ayudaran en algun futuro.
+                                </p>
+                                <div class="white-button">
+                                    <a href="#">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="right-image">
+                                <img src="assets/images/usac.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <form action="">
-                <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
-            </form>
-            <div class="Categorias" id="Categorias">
-                <a href="#" class="activo">Todo</a>
-                <a href="#">Naturaleza</a>
-                <a href="#">Personas</a>
-                <a href="#">Ciudades</a>
-                <a href="#">Animales</a>
+        </section>
+
+        <section class="section my-services" data-section="section2">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>Conocimientos</h2>
+                    <div class="line-dec"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="service-item">
+                            <div class="first-service-icon service-icon"></div>
+                            <h4>JAVA</h4>
+                            <p>
+                                Poseo conociminetos basicos en Java, ya sea aplicaciones de consola, como aplicaciones con interfaz de usuario.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="service-item">
+                            <div class="second-service-icon service-icon"></div>
+                            <h4>Redes</h4>
+                            <p>
+                                Poseo conocimientos en redes, ya sea en como configurar una red, a tambien como darle el debido mantenimiento.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="service-item">
+                            <div class="third-service-icon service-icon"></div>
+                            <h4>Python</h4>
+                            <p>
+                                Hace poco que comence a usar Python, pero con el tiempo eh podido manejar muchas de sus herramientas.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="service-item">
+                            <div class="fourth-service-icon service-icon"></div>
+                            <h4>Angular</h4>
+                            <p>
+                                Gracias a mis estudios en Kinal, aprendi a utilizar Angular, aun me falta pulir algunos aspectos, pero lo basico ya lo se manejar sin problemas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </header>
+        </section>
+
     </div>
 
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+        $(".main-menu li:first").addClass("active");
+
+        var showSection = function showSection(section, isAnimate) {
+            var direction = section.replace(/#/, ""),
+                reqSection = $(".section").filter(
+                    '[data-section="' + direction + '"]'
+                ),
+                reqSectionPos = reqSection.offset().top - 0;
+
+            if (isAnimate) {
+                $("body, html").animate(
+                    {
+                        scrollTop: reqSectionPos
+                    },
+                    800
+                );
+            } else {
+                $("body, html").scrollTop(reqSectionPos);
+            }
+        };
+
+        var checkSection = function checkSection() {
+            $(".section").each(function () {
+                var $this = $(this),
+                    topEdge = $this.offset().top - 80,
+                    bottomEdge = topEdge + $this.height(),
+                    wScroll = $(window).scrollTop();
+                if (topEdge < wScroll && bottomEdge > wScroll) {
+                    var currentId = $this.data("section"),
+                        reqLink = $("a").filter("[href*=\\#" + currentId + "]");
+                    reqLink
+                        .closest("li")
+                        .addClass("active")
+                        .siblings()
+                        .removeClass("active");
+                }
+            });
+        };
+
+        $(".main-menu").on("click", "a", function (e) {
+            e.preventDefault();
+            showSection($(this).attr("href"), true);
+        });
+
+        $(window).scroll(function () {
+            checkSection();
+        });
+    </script>
 </body>
 
 </html>
